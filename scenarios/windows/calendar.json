@@ -1,0 +1,5181 @@
+{
+ "about": "Bob's calendar as Winnie's store held it at 2026-10-11T00:23:10.000Z (scenario windows), from Winnie's events.db (snapshot:70b7fc8), anonymized by tools/capture-calendar.ts: titles, attendees, organizers, locations and ids replaced; times, responses, transparency, all-day flags and the family and location classes kept. Rows cover the synced span (sync at now minus 15 minutes, three days back, fourteen ahead) and the ask's window; rows starting past the sync horizon are dropped. 0 row(s) show an update after now in the snapshot. The plan's own holds are not in the rows: the snapshot postdates their release.",
+ "tz": "America/Indianapolis",
+ "window": {
+  "from": "2026-10-12",
+  "days": 14
+ },
+ "syncStatus": [
+  {
+   "source": "work",
+   "lastSyncedAt": "2026-10-11T00:08:10.000Z",
+   "windowStart": "2026-10-08T00:08:10.000Z",
+   "windowEnd": "2026-10-25T00:08:10.000Z",
+   "eventCount": 117,
+   "lastError": null
+  },
+  {
+   "source": "personal",
+   "lastSyncedAt": "2026-10-11T00:08:10.000Z",
+   "windowStart": "2026-10-08T00:08:10.000Z",
+   "windowEnd": "2026-10-25T00:08:10.000Z",
+   "eventCount": 4,
+   "lastError": null
+  },
+  {
+   "source": "family",
+   "lastSyncedAt": "2026-10-11T00:08:10.000Z",
+   "windowStart": "2026-10-08T00:08:10.000Z",
+   "windowEnd": "2026-10-25T00:08:10.000Z",
+   "eventCount": 35,
+   "lastError": null
+  }
+ ],
+ "events": [
+  {
+   "id": "evt-1",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Block 7",
+   "startAt": "2026-10-05",
+   "endAt": "2026-10-09",
+   "allDay": true,
+   "organizer": "person1@example.com",
+   "attendees": [
+    {
+     "email": "person3@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person1@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person2@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-2",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 9",
+   "startAt": "2026-10-08T13:00:00.000Z",
+   "endAt": "2026-10-08T13:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest13@external.example",
+     "response": "declined"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-3",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 66",
+   "startAt": "2026-10-08T13:30:00.000Z",
+   "endAt": "2026-10-08T14:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-4",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 33",
+   "startAt": "2026-10-08T14:00:00.000Z",
+   "endAt": "2026-10-08T14:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person99@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-5",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 70",
+   "startAt": "2026-10-08T14:45:00.000Z",
+   "endAt": "2026-10-08T15:15:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person74@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person83@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person63@example.com",
+     "response": "accepted"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-6",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 71",
+   "startAt": "2026-10-08T15:15:00.000Z",
+   "endAt": "2026-10-08T15:30:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person68@example.com",
+     "response": "accepted"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-7",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 17",
+   "startAt": "2026-10-08T15:30:00.000Z",
+   "endAt": "2026-10-08T16:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person17@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-8",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 72",
+   "startAt": "2026-10-08T16:00:00.000Z",
+   "endAt": "2026-10-08T16:30:00.000Z",
+   "allDay": false,
+   "location": "Place 14",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "guest18@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person29@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "guest74@external.example",
+     "response": "needsAction"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-9",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 73",
+   "startAt": "2026-10-08T16:00:00.000Z",
+   "endAt": "2026-10-08T21:45:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-10",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 35",
+   "startAt": "2026-10-08T17:00:00.000Z",
+   "endAt": "2026-10-08T17:15:00.000Z",
+   "allDay": false,
+   "organizer": "person101@example.com",
+   "attendees": [
+    {
+     "email": "person94@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person101@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person103@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person51@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person85@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person78@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person104@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person86@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person49@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-11",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 20",
+   "startAt": "2026-10-08T19:30:00.000Z",
+   "endAt": "2026-10-08T20:30:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-12",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 5",
+   "startAt": "2026-10-08T22:00:00.000Z",
+   "endAt": "2026-10-09T00:00:00.000Z",
+   "allDay": false,
+   "location": "Place 3",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-13",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 21 - mom",
+   "startAt": "2026-10-08T23:00:00.000Z",
+   "endAt": "2026-10-09T01:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-14",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 74",
+   "startAt": "2026-10-08T23:30:00.000Z",
+   "endAt": "2026-10-09T00:15:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-15",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 22",
+   "startAt": "2026-10-09T11:45:00.000Z",
+   "endAt": "2026-10-09T12:45:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-16",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 75",
+   "startAt": "2026-10-09T12:30:00.000Z",
+   "endAt": "2026-10-09T13:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-17",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 76",
+   "startAt": "2026-10-09T12:30:00.000Z",
+   "endAt": "2026-10-09T13:00:00.000Z",
+   "allDay": false,
+   "location": "Place 15",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "guest75@external.example",
+     "response": "accepted"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-18",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 44",
+   "startAt": "2026-10-09T13:00:00.000Z",
+   "endAt": "2026-10-09T13:30:00.000Z",
+   "allDay": false,
+   "organizer": "person34@example.com",
+   "attendees": [
+    {
+     "email": "person34@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-19",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 62",
+   "startAt": "2026-10-09T13:30:00.000Z",
+   "endAt": "2026-10-09T14:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-20",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 77",
+   "startAt": "2026-10-09T14:00:00.000Z",
+   "endAt": "2026-10-09T17:45:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person12@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-21",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 78",
+   "startAt": "2026-10-09T15:15:00.000Z",
+   "endAt": "2026-10-09T16:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person12@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person67@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person62@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-22",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 72",
+   "startAt": "2026-10-09T16:00:00.000Z",
+   "endAt": "2026-10-09T16:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "guest18@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person29@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest74@external.example",
+     "response": "needsAction"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-23",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 79",
+   "startAt": "2026-10-09T17:45:00.000Z",
+   "endAt": "2026-10-09T20:30:00.000Z",
+   "allDay": false,
+   "location": "Place 16",
+   "organizer": "bob@example.com",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-24",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 80",
+   "startAt": "2026-10-09T18:30:00.000Z",
+   "endAt": "2026-10-09T19:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "guest76@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-25",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 81",
+   "startAt": "2026-10-09T19:15:00.000Z",
+   "endAt": "2026-10-09T19:45:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "guest77@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "guest78@external.example",
+     "response": "needsAction"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-26",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 82",
+   "startAt": "2026-10-09T21:00:00.000Z",
+   "endAt": "2026-10-09T22:30:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person104@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-27",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 1",
+   "startAt": "2026-10-10T14:00:00.000Z",
+   "endAt": "2026-10-10T16:00:00.000Z",
+   "allDay": false,
+   "location": "Place 1",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-28",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 2",
+   "startAt": "2026-10-10T20:00:00.000Z",
+   "endAt": "2026-10-10T21:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-29",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Block 1",
+   "startAt": "2026-10-12",
+   "endAt": "2026-10-14",
+   "allDay": true,
+   "organizer": "person1@example.com",
+   "attendees": [
+    {
+     "email": "person1@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person2@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person3@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-30",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 3",
+   "startAt": "2026-10-12",
+   "endAt": "2026-10-17",
+   "allDay": true,
+   "attendees": [],
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-31",
+   "source": "personal",
+   "calendarId": "personal-calendar",
+   "title": "Personal 1",
+   "startAt": "2026-10-12T00:00:00.000Z",
+   "endAt": "2026-10-12T01:00:00.000Z",
+   "allDay": false,
+   "location": "https://video.example/1",
+   "organizer": "guest1@external.example",
+   "attendees": [
+    {
+     "email": "guest2@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest3@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest4@external.example",
+     "response": "needsAction",
+     "optional": true
+    },
+    {
+     "email": "bob.personal@example.net",
+     "response": "declined"
+    },
+    {
+     "email": "guest5@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest6@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest7@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest8@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest9@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest10@external.example",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-32",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 4",
+   "startAt": "2026-10-12T12:30:00.000Z",
+   "endAt": "2026-10-12T13:30:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-33",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 1",
+   "startAt": "2026-10-12T13:15:00.000Z",
+   "endAt": "2026-10-12T15:15:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "guest11@external.example",
+   "attendees": [
+    {
+     "email": "person4@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person5@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person6@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person7@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person8@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person9@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person10@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-34",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 2",
+   "startAt": "2026-10-12T13:30:00.000Z",
+   "endAt": "2026-10-12T14:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person11@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted",
+     "optional": true
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted",
+     "optional": true
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-35",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 3",
+   "startAt": "2026-10-12T15:00:00.000Z",
+   "endAt": "2026-10-12T16:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person16@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-36",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 4",
+   "startAt": "2026-10-12T16:15:00.000Z",
+   "endAt": "2026-10-12T16:45:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person17@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person18@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-37",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 5",
+   "startAt": "2026-10-12T17:00:00.000Z",
+   "endAt": "2026-10-12T18:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person20@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person21@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person22@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person23@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person24@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person25@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person26@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person27@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person28@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person29@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person30@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person31@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person32@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person33@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person34@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person35@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person36@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person37@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person38@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person39@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person40@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person41@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person18@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-38",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 6",
+   "startAt": "2026-10-12T18:00:00.000Z",
+   "endAt": "2026-10-12T20:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "guest12@external.example",
+   "attendees": [
+    {
+     "email": "person3@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person42@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person44@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person45@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person46@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person47@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person48@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person41@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person49@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person50@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person39@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-39",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 5",
+   "startAt": "2026-10-12T19:00:00.000Z",
+   "endAt": "2026-10-12T20:30:00.000Z",
+   "allDay": false,
+   "location": "Place 3",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-40",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 7",
+   "startAt": "2026-10-12T20:00:00.000Z",
+   "endAt": "2026-10-12T20:30:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person3@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-41",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 8",
+   "startAt": "2026-10-12T20:30:00.000Z",
+   "endAt": "2026-10-12T21:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-42",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 8",
+   "startAt": "2026-10-12T20:30:00.000Z",
+   "endAt": "2026-10-12T21:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person27@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-43",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 1",
+   "startAt": "2026-10-12T23:00:00.000Z",
+   "endAt": "2026-10-13T01:00:00.000Z",
+   "allDay": false,
+   "location": "Place 1",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-44",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Block 2",
+   "startAt": "2026-10-13",
+   "endAt": "2026-10-14",
+   "allDay": true,
+   "organizer": "person11@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-45",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 9",
+   "startAt": "2026-10-13T13:00:00.000Z",
+   "endAt": "2026-10-13T13:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest13@external.example",
+     "response": "declined"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-46",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 10",
+   "startAt": "2026-10-13T14:00:00.000Z",
+   "endAt": "2026-10-13T15:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person11@example.com",
+   "attendees": [
+    {
+     "email": "person24@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person29@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-47",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 11",
+   "startAt": "2026-10-13T15:00:00.000Z",
+   "endAt": "2026-10-13T16:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person51@example.com",
+   "attendees": [
+    {
+     "email": "person51@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person52@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person18@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person33@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person53@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person54@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person27@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person22@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person24@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person31@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person55@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person20@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person56@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person57@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person29@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person23@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person58@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person36@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person40@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person26@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person59@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person60@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person61@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person38@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person28@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person30@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person62@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person25@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person39@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person21@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person37@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person41@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person17@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person4@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person63@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person64@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person65@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person66@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person67@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person69@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person70@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person71@example.com",
+     "response": "tentative"
+    },
+    {
+     "email": "person72@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person73@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person74@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person7@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person75@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person76@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-48",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 12",
+   "startAt": "2026-10-13T15:00:00.000Z",
+   "endAt": "2026-10-13T16:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person77@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person78@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person75@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person79@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person46@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person80@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person81@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-49",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 13",
+   "startAt": "2026-10-13T16:00:00.000Z",
+   "endAt": "2026-10-13T16:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-50",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 14",
+   "startAt": "2026-10-13T17:00:00.000Z",
+   "endAt": "2026-10-13T18:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person64@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person59@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person57@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person51@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person65@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person66@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person6@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person55@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person82@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person60@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person63@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person54@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person83@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person69@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person70@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person56@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person71@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person62@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person58@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person52@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person72@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person73@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person74@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person53@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person7@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person84@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person4@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person41@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-51",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 15",
+   "startAt": "2026-10-13T17:00:00.000Z",
+   "endAt": "2026-10-13T18:00:00.000Z",
+   "allDay": false,
+   "organizer": "guest14@external.example",
+   "attendees": [
+    {
+     "email": "person17@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest15@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest14@external.example",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-52",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 16",
+   "startAt": "2026-10-13T18:00:00.000Z",
+   "endAt": "2026-10-13T18:45:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person19@example.com",
+   "attendees": [
+    {
+     "email": "person17@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person24@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person33@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-53",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 17",
+   "startAt": "2026-10-13T19:00:00.000Z",
+   "endAt": "2026-10-13T19:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person17@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-54",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 5",
+   "startAt": "2026-10-13T19:00:00.000Z",
+   "endAt": "2026-10-13T20:30:00.000Z",
+   "allDay": false,
+   "location": "Place 3",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-55",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 18",
+   "startAt": "2026-10-13T19:30:00.000Z",
+   "endAt": "2026-10-13T20:30:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person85@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person49@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-56",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 19",
+   "startAt": "2026-10-13T20:30:00.000Z",
+   "endAt": "2026-10-13T21:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person12@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person69@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-57",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 20",
+   "startAt": "2026-10-13T21:00:00.000Z",
+   "endAt": "2026-10-13T21:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person12@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-58",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Block 3",
+   "startAt": "2026-10-14",
+   "endAt": "2026-10-15",
+   "allDay": true,
+   "organizer": "person11@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-59",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Block 4",
+   "startAt": "2026-10-14",
+   "endAt": "2026-10-17",
+   "allDay": true,
+   "organizer": "person1@example.com",
+   "attendees": [
+    {
+     "email": "person1@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person2@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-60",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 21",
+   "startAt": "2026-10-14T12:00:00.000Z",
+   "endAt": "2026-10-14T15:30:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [],
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-61",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 22",
+   "startAt": "2026-10-14T13:00:00.000Z",
+   "endAt": "2026-10-14T13:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person68@example.com",
+   "attendees": [
+    {
+     "email": "person51@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person73@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person72@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person86@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person18@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person5@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person66@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person87@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person88@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person89@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person57@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person64@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person29@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person90@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person91@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person78@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person92@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person93@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person56@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person16@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person71@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person7@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest16@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "person65@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person94@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person37@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person95@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person84@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person41@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person75@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person59@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person54@example.com",
+     "response": "accepted",
+     "optional": true
+    },
+    {
+     "email": "person6@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person79@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person96@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person97@example.com",
+     "response": "accepted",
+     "optional": true
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-62",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 6",
+   "startAt": "2026-10-14T13:00:00.000Z",
+   "endAt": "2026-10-14T14:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-63",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 23",
+   "startAt": "2026-10-14T14:00:00.000Z",
+   "endAt": "2026-10-14T15:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person94@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person93@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person16@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person98@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person92@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-64",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 24",
+   "startAt": "2026-10-14T14:00:00.000Z",
+   "endAt": "2026-10-14T15:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person11@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest13@external.example",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-65",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 25",
+   "startAt": "2026-10-14T15:15:00.000Z",
+   "endAt": "2026-10-14T16:15:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person17@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person99@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-66",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 26",
+   "startAt": "2026-10-14T15:30:00.000Z",
+   "endAt": "2026-10-14T16:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-67",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 27",
+   "startAt": "2026-10-14T16:00:00.000Z",
+   "endAt": "2026-10-14T17:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "guest12@external.example",
+   "attendees": [
+    {
+     "email": "person42@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person100@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person41@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-68",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 28",
+   "startAt": "2026-10-14T17:30:00.000Z",
+   "endAt": "2026-10-14T19:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person1@example.com",
+   "attendees": [
+    {
+     "email": "guest17@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "person2@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person5@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person1@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-69",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 29",
+   "startAt": "2026-10-14T19:00:00.000Z",
+   "endAt": "2026-10-14T20:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-70",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 5",
+   "startAt": "2026-10-14T19:00:00.000Z",
+   "endAt": "2026-10-14T20:30:00.000Z",
+   "allDay": false,
+   "location": "Place 3",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-71",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 30",
+   "startAt": "2026-10-14T20:00:00.000Z",
+   "endAt": "2026-10-14T21:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person11@example.com",
+   "attendees": [
+    {
+     "email": "person16@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest18@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest19@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "person94@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person92@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person99@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest20@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "person93@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest21@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "person98@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-72",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 31",
+   "startAt": "2026-10-14T21:00:00.000Z",
+   "endAt": "2026-10-14T23:00:00.000Z",
+   "allDay": false,
+   "location": "Place 4",
+   "organizer": "person42@example.com",
+   "attendees": [
+    {
+     "email": "person42@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person47@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-73",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 1",
+   "startAt": "2026-10-14T22:00:00.000Z",
+   "endAt": "2026-10-14T23:30:00.000Z",
+   "allDay": false,
+   "location": "Place 1",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-74",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 9",
+   "startAt": "2026-10-15T13:00:00.000Z",
+   "endAt": "2026-10-15T13:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest13@external.example",
+     "response": "declined"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-75",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 32",
+   "startAt": "2026-10-15T13:30:00.000Z",
+   "endAt": "2026-10-15T14:15:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person99@example.com",
+   "attendees": [
+    {
+     "email": "person16@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person94@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person99@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person93@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-76",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 33",
+   "startAt": "2026-10-15T14:00:00.000Z",
+   "endAt": "2026-10-15T14:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person99@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-77",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 34",
+   "startAt": "2026-10-15T14:30:00.000Z",
+   "endAt": "2026-10-15T15:00:00.000Z",
+   "allDay": false,
+   "organizer": "person1@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person1@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-78",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 35",
+   "startAt": "2026-10-15T15:00:00.000Z",
+   "endAt": "2026-10-15T15:15:00.000Z",
+   "allDay": false,
+   "organizer": "person101@example.com",
+   "attendees": [
+    {
+     "email": "person94@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person101@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person102@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person103@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person102@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-79",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 36",
+   "startAt": "2026-10-15T15:00:00.000Z",
+   "endAt": "2026-10-15T15:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person12@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person73@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person4@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person69@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-80",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 37",
+   "startAt": "2026-10-15T15:30:00.000Z",
+   "endAt": "2026-10-15T16:30:00.000Z",
+   "allDay": false,
+   "organizer": "person1@example.com",
+   "attendees": [
+    {
+     "email": "person1@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-81",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 38",
+   "startAt": "2026-10-15T16:30:00.000Z",
+   "endAt": "2026-10-15T17:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person68@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-82",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 35",
+   "startAt": "2026-10-15T17:00:00.000Z",
+   "endAt": "2026-10-15T17:15:00.000Z",
+   "allDay": false,
+   "organizer": "person101@example.com",
+   "attendees": [
+    {
+     "email": "person94@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person101@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person103@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person51@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person85@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person78@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person104@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person86@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person49@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-83",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 17",
+   "startAt": "2026-10-15T17:30:00.000Z",
+   "endAt": "2026-10-15T18:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person17@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-84",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 39",
+   "startAt": "2026-10-15T18:00:00.000Z",
+   "endAt": "2026-10-15T18:30:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person85@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-85",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 40",
+   "startAt": "2026-10-15T19:00:00.000Z",
+   "endAt": "2026-10-15T19:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "guest22@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "person34@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person39@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction",
+     "optional": true
+    },
+    {
+     "email": "person1@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-86",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 41",
+   "startAt": "2026-10-15T19:30:00.000Z",
+   "endAt": "2026-10-15T20:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person12@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-87",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 42",
+   "startAt": "2026-10-15T22:30:00.000Z",
+   "endAt": "2026-10-16T01:30:00.000Z",
+   "allDay": false,
+   "location": "Place 5",
+   "organizer": "guest23@external.example",
+   "attendees": [
+    {
+     "email": "guest24@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest25@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest26@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest27@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest28@external.example",
+     "response": "tentative"
+    },
+    {
+     "email": "guest29@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "bob.personal@example.net",
+     "response": "declined"
+    },
+    {
+     "email": "guest30@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest23@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest31@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest32@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest33@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest34@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest35@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest36@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest37@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest38@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "guest39@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest40@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "guest41@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest42@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest43@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "guest44@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "guest45@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest46@external.example",
+     "response": "tentative"
+    },
+    {
+     "email": "guest47@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest48@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest49@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest50@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest51@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "guest52@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest53@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest54@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest55@external.example",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-88",
+   "source": "personal",
+   "calendarId": "personal-calendar",
+   "title": "Personal 2",
+   "startAt": "2026-10-15T22:30:00.000Z",
+   "endAt": "2026-10-16T01:30:00.000Z",
+   "allDay": false,
+   "location": "Place 5",
+   "organizer": "guest23@external.example",
+   "attendees": [
+    {
+     "email": "guest24@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest25@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest26@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest27@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest28@external.example",
+     "response": "tentative"
+    },
+    {
+     "email": "guest29@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "bob.personal@example.net",
+     "response": "declined"
+    },
+    {
+     "email": "guest30@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest23@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest31@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest32@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest33@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest34@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest35@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest36@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest37@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest38@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "guest39@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest40@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "guest41@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest42@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest43@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "guest44@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "guest45@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest46@external.example",
+     "response": "tentative"
+    },
+    {
+     "email": "guest47@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest48@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest49@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest50@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest51@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "guest52@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest53@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest54@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest55@external.example",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-89",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Block 5",
+   "startAt": "2026-10-16",
+   "endAt": "2026-10-17",
+   "allDay": true,
+   "organizer": "person85@example.com",
+   "attendees": [
+    {
+     "email": "person85@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person2@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-90",
+   "source": "personal",
+   "calendarId": "personal-calendar",
+   "title": "Personal 3",
+   "startAt": "2026-10-16T11:30:00.000Z",
+   "endAt": "2026-10-16T12:30:00.000Z",
+   "allDay": false,
+   "location": "Place 6",
+   "organizer": "guest56@external.example",
+   "attendees": [
+    {
+     "email": "guest57@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "bob.personal@example.net",
+     "response": "declined"
+    },
+    {
+     "email": "guest56@external.example",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-91",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 43",
+   "startAt": "2026-10-16T12:30:00.000Z",
+   "endAt": "2026-10-16T13:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest58@external.example",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-92",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 44",
+   "startAt": "2026-10-16T13:00:00.000Z",
+   "endAt": "2026-10-16T13:30:00.000Z",
+   "allDay": false,
+   "organizer": "person34@example.com",
+   "attendees": [
+    {
+     "email": "person34@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-93",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 45",
+   "startAt": "2026-10-16T13:45:00.000Z",
+   "endAt": "2026-10-16T14:15:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-94",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 46",
+   "startAt": "2026-10-16T14:30:00.000Z",
+   "endAt": "2026-10-16T15:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-95",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 47",
+   "startAt": "2026-10-16T15:15:00.000Z",
+   "endAt": "2026-10-16T16:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person5@example.com",
+   "attendees": [
+    {
+     "email": "person5@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-96",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 48",
+   "startAt": "2026-10-16T16:15:00.000Z",
+   "endAt": "2026-10-16T16:45:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-97",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 49",
+   "startAt": "2026-10-16T17:00:00.000Z",
+   "endAt": "2026-10-16T17:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person34@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person38@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person50@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person39@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction",
+     "optional": true
+    },
+    {
+     "email": "person1@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest59@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest60@external.example",
+     "response": "accepted"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-98",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 50",
+   "startAt": "2026-10-16T18:00:00.000Z",
+   "endAt": "2026-10-16T19:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person42@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person45@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person105@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person97@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person85@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person44@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person106@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person107@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person3@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person104@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person108@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-99",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 51",
+   "startAt": "2026-10-16T19:00:00.000Z",
+   "endAt": "2026-10-16T20:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person51@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-100",
+   "source": "personal",
+   "calendarId": "personal-calendar",
+   "title": "Personal 4",
+   "startAt": "2026-10-18T00:00:00.000Z",
+   "endAt": "2026-10-18T03:00:00.000Z",
+   "allDay": false,
+   "location": "Place 7",
+   "organizer": "guest23@external.example",
+   "attendees": [
+    {
+     "email": "guest61@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest23@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "bob.personal@example.net",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-101",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 7 - dad",
+   "startAt": "2026-10-18T00:00:00.000Z",
+   "endAt": "2026-10-18T03:00:00.000Z",
+   "allDay": false,
+   "location": "Place 7",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-102",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 52",
+   "startAt": "2026-10-18T12:00:00.000Z",
+   "endAt": "2026-10-18T14:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "guest11@external.example",
+   "attendees": [
+    {
+     "email": "person73@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person59@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person5@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person6@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person64@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person8@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person9@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person57@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person10@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person109@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-103",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 8 - dad",
+   "startAt": "2026-10-18T13:00:00.000Z",
+   "endAt": "2026-10-18T13:30:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-104",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 53",
+   "startAt": "2026-10-18T14:00:00.000Z",
+   "endAt": "2026-10-18T19:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "guest11@external.example",
+   "attendees": [
+    {
+     "email": "person66@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person64@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person8@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person9@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person20@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person40@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person10@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person28@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person25@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person73@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person35@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-105",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 54",
+   "startAt": "2026-10-19T12:30:00.000Z",
+   "endAt": "2026-10-19T20:30:00.000Z",
+   "allDay": false,
+   "organizer": "person23@example.com",
+   "attendees": [
+    {
+     "email": "person30@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person23@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person110@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-106",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 55",
+   "startAt": "2026-10-19T17:30:00.000Z",
+   "endAt": "2026-10-19T18:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person38@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "guest62@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "person39@example.com",
+     "response": "accepted",
+     "optional": true
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest63@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest64@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction",
+     "optional": true
+    },
+    {
+     "email": "person1@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-107",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 56",
+   "startAt": "2026-10-19T18:15:00.000Z",
+   "endAt": "2026-10-19T19:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person16@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest18@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "person94@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person92@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "guest20@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "person93@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest65@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person98@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-108",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 7",
+   "startAt": "2026-10-19T19:30:00.000Z",
+   "endAt": "2026-10-19T20:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person3@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-109",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 57",
+   "startAt": "2026-10-19T20:00:00.000Z",
+   "endAt": "2026-10-19T20:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "guest66@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest67@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest68@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest69@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest70@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "guest71@external.example",
+     "response": "needsAction"
+    },
+    {
+     "email": "person38@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person39@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest72@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction",
+     "optional": true
+    },
+    {
+     "email": "person1@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-110",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 9",
+   "startAt": "2026-10-19T20:00:00.000Z",
+   "endAt": "2026-10-19T22:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-111",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 10",
+   "startAt": "2026-10-19T20:45:00.000Z",
+   "endAt": "2026-10-19T21:45:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-112",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 5",
+   "startAt": "2026-10-19T22:00:00.000Z",
+   "endAt": "2026-10-20T00:00:00.000Z",
+   "allDay": false,
+   "location": "Place 8",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-113",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 11",
+   "startAt": "2026-10-19T22:30:00.000Z",
+   "endAt": "2026-10-19T23:30:00.000Z",
+   "allDay": false,
+   "location": "Place 9",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-114",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 9",
+   "startAt": "2026-10-20T13:00:00.000Z",
+   "endAt": "2026-10-20T13:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest13@external.example",
+     "response": "declined"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-115",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 13",
+   "startAt": "2026-10-20T15:00:00.000Z",
+   "endAt": "2026-10-20T15:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-116",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 58",
+   "startAt": "2026-10-20T15:30:00.000Z",
+   "endAt": "2026-10-20T17:30:00.000Z",
+   "allDay": false,
+   "location": "Place 10",
+   "organizer": "bob@example.com",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-117",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 59",
+   "startAt": "2026-10-20T16:00:00.000Z",
+   "endAt": "2026-10-20T17:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "guest12@external.example",
+   "attendees": [
+    {
+     "email": "person42@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person41@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person100@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "declined"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-118",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 17",
+   "startAt": "2026-10-20T19:00:00.000Z",
+   "endAt": "2026-10-20T19:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person17@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-119",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 60",
+   "startAt": "2026-10-20T19:30:00.000Z",
+   "endAt": "2026-10-20T20:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-120",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 9",
+   "startAt": "2026-10-20T20:00:00.000Z",
+   "endAt": "2026-10-20T22:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-121",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 5",
+   "startAt": "2026-10-20T22:00:00.000Z",
+   "endAt": "2026-10-21T00:00:00.000Z",
+   "allDay": false,
+   "location": "Place 3",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-122",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 61",
+   "startAt": "2026-10-21T11:00:00.000Z",
+   "endAt": "2026-10-21T12:00:00.000Z",
+   "allDay": false,
+   "location": "Place 11",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest23@external.example",
+     "response": "declined"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-123",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 22",
+   "startAt": "2026-10-21T13:00:00.000Z",
+   "endAt": "2026-10-21T13:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person68@example.com",
+   "attendees": [
+    {
+     "email": "person51@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person73@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person72@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person86@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person18@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person5@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person66@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person87@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person88@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person89@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person57@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person64@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person29@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person90@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person91@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person78@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person92@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person93@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person56@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person16@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person71@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person7@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest16@external.example",
+     "response": "declined"
+    },
+    {
+     "email": "person65@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person94@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person37@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person95@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person84@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person41@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person75@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person59@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person54@example.com",
+     "response": "accepted",
+     "optional": true
+    },
+    {
+     "email": "person6@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person79@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person96@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person97@example.com",
+     "response": "accepted",
+     "optional": true
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-124",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 62",
+   "startAt": "2026-10-21T15:30:00.000Z",
+   "endAt": "2026-10-21T16:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-125",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 28",
+   "startAt": "2026-10-21T17:00:00.000Z",
+   "endAt": "2026-10-21T18:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person1@example.com",
+   "attendees": [
+    {
+     "email": "guest17@external.example",
+     "response": "accepted"
+    },
+    {
+     "email": "person2@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person5@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person1@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-126",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 34",
+   "startAt": "2026-10-21T19:00:00.000Z",
+   "endAt": "2026-10-21T20:00:00.000Z",
+   "allDay": false,
+   "organizer": "person1@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person1@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-127",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 12",
+   "startAt": "2026-10-21T20:00:00.000Z",
+   "endAt": "2026-10-21T22:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-128",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 1",
+   "startAt": "2026-10-21T22:00:00.000Z",
+   "endAt": "2026-10-21T23:30:00.000Z",
+   "allDay": false,
+   "location": "Place 1",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-129",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 5",
+   "startAt": "2026-10-21T22:00:00.000Z",
+   "endAt": "2026-10-22T00:00:00.000Z",
+   "allDay": false,
+   "location": "Place 8",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-130",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 63",
+   "startAt": "2026-10-21T22:30:00.000Z",
+   "endAt": "2026-10-22T01:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-131",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 64",
+   "startAt": "2026-10-21T22:30:00.000Z",
+   "endAt": "2026-10-22T01:00:00.000Z",
+   "allDay": false,
+   "location": "Place 12",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-132",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 13 - mom",
+   "startAt": "2026-10-21T23:00:00.000Z",
+   "endAt": "2026-10-22T01:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-133",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 65",
+   "startAt": "2026-10-22T12:30:00.000Z",
+   "endAt": "2026-10-22T20:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person23@example.com",
+   "attendees": [
+    {
+     "email": "person30@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person23@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person110@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-134",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 9",
+   "startAt": "2026-10-22T13:00:00.000Z",
+   "endAt": "2026-10-22T13:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person11@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest13@external.example",
+     "response": "declined"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-135",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 66",
+   "startAt": "2026-10-22T13:30:00.000Z",
+   "endAt": "2026-10-22T14:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-136",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 33",
+   "startAt": "2026-10-22T14:00:00.000Z",
+   "endAt": "2026-10-22T14:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person99@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-137",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 67",
+   "startAt": "2026-10-22T16:00:00.000Z",
+   "endAt": "2026-10-22T17:00:00.000Z",
+   "allDay": false,
+   "location": "https://video.example/1",
+   "organizer": "guest73@external.example",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-138",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 38",
+   "startAt": "2026-10-22T16:30:00.000Z",
+   "endAt": "2026-10-22T17:00:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person68@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person19@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-139",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 35",
+   "startAt": "2026-10-22T17:00:00.000Z",
+   "endAt": "2026-10-22T17:15:00.000Z",
+   "allDay": false,
+   "organizer": "person101@example.com",
+   "attendees": [
+    {
+     "email": "person94@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person101@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person68@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person103@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person51@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person85@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person78@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person104@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person86@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person49@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-140",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 68",
+   "startAt": "2026-10-22T17:15:00.000Z",
+   "endAt": "2026-10-22T18:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person78@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-141",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 2",
+   "startAt": "2026-10-22T17:30:00.000Z",
+   "endAt": "2026-10-22T18:00:00.000Z",
+   "allDay": false,
+   "organizer": "person11@example.com",
+   "attendees": [
+    {
+     "email": "person12@example.com",
+     "response": "accepted",
+     "optional": true
+    },
+    {
+     "email": "person13@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person14@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted",
+     "optional": true
+    },
+    {
+     "email": "person11@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person15@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-142",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 17",
+   "startAt": "2026-10-22T19:00:00.000Z",
+   "endAt": "2026-10-22T19:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "person17@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-143",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 12",
+   "startAt": "2026-10-22T20:00:00.000Z",
+   "endAt": "2026-10-22T22:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-144",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 5",
+   "startAt": "2026-10-22T22:00:00.000Z",
+   "endAt": "2026-10-23T00:00:00.000Z",
+   "allDay": false,
+   "location": "Place 3",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-145",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 14 - dad",
+   "startAt": "2026-10-22T22:15:00.000Z",
+   "endAt": "2026-10-22T23:15:00.000Z",
+   "allDay": false,
+   "location": "Place 13",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-146",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Block 5",
+   "startAt": "2026-10-23",
+   "endAt": "2026-10-24",
+   "allDay": true,
+   "organizer": "person85@example.com",
+   "attendees": [
+    {
+     "email": "person85@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person2@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-147",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Block 6",
+   "startAt": "2026-10-23",
+   "endAt": "2026-10-24",
+   "allDay": true,
+   "organizer": "person3@example.com",
+   "attendees": [
+    {
+     "email": "person3@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person42@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person43@example.com",
+     "response": "needsAction"
+    },
+    {
+     "email": "person44@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person95@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person49@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person85@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "needsAction",
+   "status": "confirmed",
+   "transparent": true
+  },
+  {
+   "id": "evt-148",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 15",
+   "startAt": "2026-10-23",
+   "endAt": "2026-10-24",
+   "allDay": true,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-149",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 43",
+   "startAt": "2026-10-23T12:30:00.000Z",
+   "endAt": "2026-10-23T13:00:00.000Z",
+   "allDay": false,
+   "organizer": "bob@example.com",
+   "attendees": [
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "guest58@external.example",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-150",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 69",
+   "startAt": "2026-10-23T12:30:00.000Z",
+   "endAt": "2026-10-23T20:30:00.000Z",
+   "allDay": false,
+   "location": "Bay 2",
+   "organizer": "person23@example.com",
+   "attendees": [
+    {
+     "email": "person30@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "person23@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "declined"
+    },
+    {
+     "email": "person110@example.com",
+     "response": "needsAction"
+    }
+   ],
+   "myResponse": "declined",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-151",
+   "source": "work",
+   "calendarId": "work-calendar",
+   "title": "Meeting 44",
+   "startAt": "2026-10-23T13:00:00.000Z",
+   "endAt": "2026-10-23T13:30:00.000Z",
+   "allDay": false,
+   "organizer": "person34@example.com",
+   "attendees": [
+    {
+     "email": "person34@example.com",
+     "response": "accepted"
+    },
+    {
+     "email": "bob@example.com",
+     "response": "accepted"
+    }
+   ],
+   "myResponse": "accepted",
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-152",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 16 - dad",
+   "startAt": "2026-10-23T16:00:00.000Z",
+   "endAt": "2026-10-25T17:00:00.000Z",
+   "allDay": false,
+   "location": "Place 8",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-153",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 12",
+   "startAt": "2026-10-23T20:00:00.000Z",
+   "endAt": "2026-10-23T22:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-154",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 12",
+   "startAt": "2026-10-24T12:00:00.000Z",
+   "endAt": "2026-10-24T14:00:00.000Z",
+   "allDay": false,
+   "location": "Place 3",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-155",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family practice 17",
+   "startAt": "2026-10-24T13:00:00.000Z",
+   "endAt": "2026-10-24T15:00:00.000Z",
+   "allDay": false,
+   "location": "Place 8",
+   "attendees": [],
+   "status": "confirmed"
+  },
+  {
+   "id": "evt-156",
+   "source": "family",
+   "calendarId": "family-calendar",
+   "title": "Family event 18",
+   "startAt": "2026-10-24T16:00:00.000Z",
+   "endAt": "2026-10-24T18:00:00.000Z",
+   "allDay": false,
+   "attendees": [],
+   "status": "confirmed"
+  }
+ ]
+}

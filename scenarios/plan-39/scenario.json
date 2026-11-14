@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "plan-39",
+  "title": "Three-way lunch, 21-day window, Friday preference; one party shares a booking link with no Fridays, the other is silent",
+  "source": "Winnie plan 39 (2026-10-10), as captured in Winnie's eval runner tools/evals/scheduling-agent.ts at ca6b6ee; names, addresses and calendar titles replaced (design section 6), times and shapes kept exactly.",
+  "now": "2026-10-10T16:30:00.000Z",
+  "tz": "America/Indianapolis",
+  "world": {
+    "calendar": "calendar.json",
+    "schedulingPolicy": {"workingHours": {"mon": ["09:00-17:00"], "tue": ["09:00-17:00"], "wed": ["09:00-17:00"], "thu": ["09:00-17:00"], "fri": ["09:00-17:00"], "sat": [], "sun": []}, "bufferMin": 10, "minNoticeMin": 120, "granularityMin": 15, "protectedBlocks": [], "dayLoadWarnAt": 12, "preferredDurationsMin": [15, 30, 45, 60], "defaultDurationMin": 30, "maxPerDay": 2, "spreadMin": 120, "allDayBlocks": false},
+    "familyRules": "default",
+    "operatorAddresses": ["bob@example.com", "bob.personal@example.net"],
+    "agentAddresses": ["winnie@agent.example.com"],
+    "internalDomain": "example.com",
+    "calendly": {"party": "emery.ashby@example.org", "url": "https://calendly.com/emeryashby", "eventTypes": "calendly-event-types.json", "range": "calendly-range.json"}
+  },
+  "plan": {
+    "id": 39,
+    "subject": "Re: Emery Ashby <> Finley Bramley",
+    "counterpart": "finley.bramley@example.net",
+    "parties": ["finley.bramley@example.net", "emery.ashby@example.org"],
+    "partyNames": {"finley.bramley@example.net": "Finley Bramley", "emery.ashby@example.org": "Emery Ashby"},
+    "askShape": {"mode": "in-person", "durationMin": 60, "meal": "lunch", "earliest": "11:30", "latest": "13:30", "from": "2026-10-10", "days": 21, "leaveToThem": true, "weekdays": ["fri"]},
+    "holds": []
+  },
+  "events": [
+    {
+      "index": 0,
+      "trigger": "Emery replied on the thread with his availability link.",
+      "thread": [
+        {"from": "Finley Bramley <finley.bramley@example.net>", "at": "2026-10-08T21:27:00Z", "text": "Lunch is in my top 5 favorite words"},
+        {"from": "Bob <bob@example.com>", "at": "2026-10-10T15:40:23Z", "text": "Well I'm excited. How about a Friday? Well shoot for somewhere on the north side. And, for added adventure I'm including an AI agent to help us coordinate. This could be fun. (Or funny) Winnie - can you please help find a time that works for the three of us to connect over lunch on the north side in the next three weeks. My preference is a Friday, but we can group vote too."},
+        {"from": "Emery Ashby <emery.ashby@example.org>", "at": "2026-10-10T16:20:54Z", "text": "Winnie, you can see my availability here: calendly.com/emeryashby"}
+      ],
+      "sent": [],
+      "bob": [
+        {"at": "2026-10-10T15:42:12Z", "text": "Let's leave it to them"},
+        {"at": "2026-10-10T15:43:12Z", "text": "Can you give preference to a Friday please?"}
+      ],
+      "openCards": [],
+      "links": {"emery.ashby@example.org": "https://calendly.com/emeryashby"},
+      "expect": {
+        "decisionClass": "propose",
+        "mustReach": ["finley.bramley@example.net"],
+        "slotStarts": ["2026-10-19T15:30:00.000Z"],
+        "tellBobMustMatch": "friday",
+        "rulesInPlay": ["V1", "V2", "V3", "V5", "V6", "V8", "V9"],
+        "basis": "Decision 1 of design/scheduling-agent.md (Bob, 2026-10-10): a stated preference is worked around; propose the best overlap to the silent party and tell Bob in the same message why it is not a Friday. Run 3 of design/scheduling-agent-evals.md is the recorded instance: the single overlap is Mon Oct 19 11:30 to 12:30 (Bob's zone); nothing is booked. V6: the Friday line is a preference, not a constraint, so proposing without asking Bob first is correct, and asking Bob first is the run-1 behaviour the decision replaced."
+      }
+    }
+  ]
+}

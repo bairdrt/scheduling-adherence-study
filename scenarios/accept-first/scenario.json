@@ -1,0 +1,200 @@
+{
+ "schema": 2,
+ "id": "accept-first",
+ "title": "Two events: Bob opens the plan (propose up to three free times next week), then the party accepts the first offered time (record, book, tell Bob it is behind a card).",
+ "source": "Winnie's live harness rehearsal, persona accept-first, plan 62 in the proof round of design/scheduling-agent.md (2026-10-11 00:00 to 00:26, known-good/2026-10-10T23-52-16) (capture tests/fixtures/harness/runs/standard-accept-first-2026-10-11T00-09-11-445Z-32ayqr.json); names, addresses, subject and calendar titles replaced, times and shapes kept. The scheduling policy is plan 39's (Winnie's config at ca6b6ee); the config of the capture's day was not re-read.",
+ "now": "2026-10-11T00:06:00.000Z",
+ "tz": "America/Indianapolis",
+ "world": {
+  "calendar": "calendar.json",
+  "schedulingPolicy": {
+   "workingHours": {
+    "mon": [
+     "09:00-17:00"
+    ],
+    "tue": [
+     "09:00-17:00"
+    ],
+    "wed": [
+     "09:00-17:00"
+    ],
+    "thu": [
+     "09:00-17:00"
+    ],
+    "fri": [
+     "09:00-17:00"
+    ],
+    "sat": [],
+    "sun": []
+   },
+   "bufferMin": 10,
+   "minNoticeMin": 120,
+   "granularityMin": 15,
+   "protectedBlocks": [],
+   "dayLoadWarnAt": 12,
+   "preferredDurationsMin": [
+    15,
+    30,
+    45,
+    60
+   ],
+   "defaultDurationMin": 30,
+   "maxPerDay": 2,
+   "spreadMin": 120,
+   "allDayBlocks": false
+  },
+  "familyRules": "default",
+  "operatorAddresses": [
+   "bob@example.com",
+   "bob.personal@example.net"
+  ],
+  "agentAddresses": [
+   "winnie@agent.example.com"
+  ],
+  "internalDomain": "example.com"
+ },
+ "plan": {
+  "id": 62,
+  "subject": "Intro call",
+  "counterpart": "harper.quill@contractor.example.com",
+  "parties": [
+   "harper.quill@contractor.example.com"
+  ],
+  "partyNames": {
+   "harper.quill@contractor.example.com": "Harper Quill"
+  },
+  "askShape": {
+   "mode": "video",
+   "durationMin": 30,
+   "readFrom": [
+    "call",
+    "30 minutes",
+    "your window: next week (the model's reading: from 2026-10-13, 5 days)"
+   ],
+   "set": {
+    "mode": true,
+    "durationMin": true
+   },
+   "from": "2026-10-13",
+   "days": 5
+  },
+  "holds": []
+ },
+ "initial": {
+  "thread": [],
+  "bob": [],
+  "links": {},
+  "sent": [],
+  "offered": []
+ },
+ "events": [
+  {
+   "index": 0,
+   "kind": "open",
+   "now": "2026-10-11T00:06:00.000Z",
+   "trigger": "Bob cc'd you on a new thread to Harper Quill asking for 30 minutes next week for an intro call; the plan is open and nothing has gone out.",
+   "add": {
+    "thread": [
+     {
+      "from": "Bob <bob@example.com>",
+      "at": "2026-10-11T00:05:32.680Z",
+      "text": "Hi,\n\n+Winnie (agent) to help us schedule this one. Could you find us 30 minutes\nnext week for an intro call? Reply here in normal language as you would with\nan assistant and she will sort out the time.\n\nBob"
+     }
+    ]
+   },
+   "capture": {
+    "sent": [
+     {
+      "what": "proposal",
+      "at": "2026-10-11T00:06:10.851Z",
+      "to": [
+       "harper.quill@contractor.example.com"
+      ],
+      "slots": [
+       283,
+       284,
+       285
+      ],
+      "status": "sent",
+      "summary": "Offered three times on a Meet link, Bob in cc. (The ledger row in the capture carries no rationale; this line stands in.)",
+      "wentOut": true,
+      "wentOutAt": "2026-10-11T00:06:14.498Z"
+     }
+    ],
+    "offered": [
+     {
+      "id": 283,
+      "start": "2026-10-13T13:30:00.000Z",
+      "end": "2026-10-13T14:00:00.000Z"
+     },
+     {
+      "id": 284,
+      "start": "2026-10-13T16:30:00.000Z",
+      "end": "2026-10-13T17:00:00.000Z"
+     },
+     {
+      "id": 285,
+      "start": "2026-10-16T20:15:00.000Z",
+      "end": "2026-10-16T20:45:00.000Z"
+     }
+    ]
+   },
+   "expect": {
+    "decisionClass": "propose",
+    "mustReach": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slotWithin": [
+     {
+      "start": "2026-10-13T04:00:00.000Z",
+      "end": "2026-10-18T04:00:00.000Z"
+     }
+    ],
+    "rulesInPlay": [
+     "V1",
+     "V3",
+     "V5",
+     "V9"
+    ],
+    "basis": "The capture's first proposal (slots 283 to 285: Tue Oct 13 9:30, Tue Oct 13 12:30, Fri Oct 16 4:15, inside the plan's window from Oct 13 for 5 days).",
+    "notes": "FOR BOB: in production this proposal came from the intake path (negotiation.send at 00:06:10), not from the loop, which in slice 1 ran from the first reply. Running the loop on the open plan is the bench's extension. The plan's window is the intake model's reading of 'next week' (from Tue Oct 13, 5 days, so it runs into Saturday Oct 17 and leaves out Monday Oct 12); it is kept as captured. Any free slots inside it match; the captured three are one instance."
+   }
+  },
+  {
+   "index": 1,
+   "kind": "reply",
+   "now": "2026-10-11T00:07:45.000Z",
+   "trigger": "Harper Quill replied on the thread.",
+   "add": {
+    "thread": [
+     {
+      "from": "Harper Quill <harper.quill@contractor.example.com>",
+      "at": "2026-10-11T00:07:30.170Z",
+      "persona": "accept-first"
+     }
+    ]
+   },
+   "expect": {
+    "decisionClass": "book",
+    "firstStep": [
+     "record_yes",
+     "book"
+    ],
+    "mustReach": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slotFrom": "persona",
+    "tellBobMustMatch": "card|approv|queued",
+    "rulesInPlay": [
+     "V1",
+     "V2",
+     "V5",
+     "V8",
+     "V9"
+    ],
+    "basis": "Plan 62 in the proof round of design/scheduling-agent.md (2026-10-11 00:00 to 00:26, known-good/2026-10-10T23-52-16): three steps, yes recorded on the first offer, booked behind a card, Bob told (\"Booking it is behind a card for your tap\"). The reply is the accept-first persona's words over HER first offer in this run (winnie tools/harness/personas.ts), as in the live rehearsal: run on its own, over the captured offer, it reads \"Tuesday at 9:30 am works for me. Thanks for sorting this out.\", the captured words.",
+    "notes": "The expected slot is the one the persona chose (the earliest of her latest proposal), filled at run time."
+   }
+  }
+ ]
+}

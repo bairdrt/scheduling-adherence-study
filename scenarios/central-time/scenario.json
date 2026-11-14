@@ -1,0 +1,172 @@
+{
+ "schema": 2,
+ "id": "central-time",
+ "title": "One party restates the first offered time one hour earlier with a zone label (\"9:45 am Central on Monday\" for Mon 10:45 Eastern). Convert, record the yes on the offered slot, book.",
+ "source": "Winnie's live harness rehearsal, persona central-time, plan 20 (capture tests/fixtures/harness/runs/standard-central-time-2026-10-06T02-27-32-029Z-ct7j3n.json); names, addresses, subject and calendar titles replaced (design section 6), times and shapes kept exactly. The scheduling policy is plan 39's (Winnie's config at ca6b6ee); the config of the capture's day was not re-read. Calendar from the snapshot of 2026-10-06 06:15Z (c7decd2), the nearest to now.",
+ "now": "2026-10-06T02:26:00.000Z",
+ "tz": "America/Indianapolis",
+ "world": {
+  "calendar": "calendar.json",
+  "schedulingPolicy": {
+   "workingHours": {
+    "mon": [
+     "09:00-17:00"
+    ],
+    "tue": [
+     "09:00-17:00"
+    ],
+    "wed": [
+     "09:00-17:00"
+    ],
+    "thu": [
+     "09:00-17:00"
+    ],
+    "fri": [
+     "09:00-17:00"
+    ],
+    "sat": [],
+    "sun": []
+   },
+   "bufferMin": 10,
+   "minNoticeMin": 120,
+   "granularityMin": 15,
+   "protectedBlocks": [],
+   "dayLoadWarnAt": 12,
+   "preferredDurationsMin": [
+    15,
+    30,
+    45,
+    60
+   ],
+   "defaultDurationMin": 30,
+   "maxPerDay": 2,
+   "spreadMin": 120,
+   "allDayBlocks": false
+  },
+  "familyRules": "default",
+  "operatorAddresses": [
+   "bob@example.com",
+   "bob.personal@example.net"
+  ],
+  "agentAddresses": [
+   "winnie@agent.example.com"
+  ],
+  "internalDomain": "example.com"
+ },
+ "plan": {
+  "id": 20,
+  "subject": "Intro call",
+  "counterpart": "harper.quill@contractor.example.com",
+  "parties": [
+   "harper.quill@contractor.example.com"
+  ],
+  "partyNames": {
+   "harper.quill@contractor.example.com": "Harper Quill"
+  },
+  "askShape": {
+   "mode": "video",
+   "durationMin": 30,
+   "readFrom": [
+    "call",
+    "30 minutes",
+    "next week"
+   ],
+   "from": "2026-10-12",
+   "days": 5
+  },
+  "holds": []
+ },
+ "initial": {
+  "thread": [
+   {
+    "from": "Bob <bob@example.com>",
+    "at": "2026-10-06T02:23:43.792Z",
+    "text": "Hi,\n\n+Winnie (agent) to help us schedule this one. Could you find us 30 minutes\nnext week for an intro call? Reply here in normal language as you would with\nan assistant and she will sort out the time.\n\nBob"
+   },
+   {
+    "from": "Winnie <winnie@agent.example.com>",
+    "at": "2026-10-06T02:25:33.000Z",
+    "text": "Hi Harper,\n\nI help Bob with his calendar. He would like to find 30 minutes with you on a Meet link. Any of these work on his side:\n\n- Mon, Oct 12, 10:45am to 11:15am ET\n- Mon, Oct 12, 4:15pm to 4:45pm ET\n- Tue, Oct 13, 2:15pm to 2:45pm ET\n\nIf one of those suits, say so and I will send the invite. If none do, send me a couple of times that work for you and I will check them.\n\nWinnie\nScheduling assistant to Bob, Example Co"
+   }
+  ],
+  "bob": [],
+  "links": {},
+  "sent": [
+   {
+    "what": "proposal",
+    "at": "2026-10-06T02:24:26.384Z",
+    "to": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slots": [
+     155,
+     156,
+     157
+    ],
+    "status": "sent",
+    "summary": "Offered three times on a Meet link, Bob in cc. (The ledger row in the capture carries no rationale; this line stands in.)",
+    "wentOut": true,
+    "wentOutAt": "2026-10-06T02:24:29.815Z"
+   }
+  ],
+  "offered": [
+   {
+    "id": 155,
+    "start": "2026-10-12T14:45:00.000Z",
+    "end": "2026-10-12T15:15:00.000Z"
+   },
+   {
+    "id": 156,
+    "start": "2026-10-12T20:15:00.000Z",
+    "end": "2026-10-12T20:45:00.000Z"
+   },
+   {
+    "id": 157,
+    "start": "2026-10-13T18:15:00.000Z",
+    "end": "2026-10-13T18:45:00.000Z"
+   }
+  ]
+ },
+ "events": [
+  {
+   "index": 0,
+   "kind": "reply",
+   "trigger": "Harper Quill replied on the thread.",
+   "add": {
+    "thread": [
+     {
+      "from": "Harper Quill <harper.quill@contractor.example.com>",
+      "at": "2026-10-06T02:25:47.417Z",
+      "text": "9:45 am Central on Monday works for me."
+     }
+    ]
+   },
+   "expect": {
+    "decisionClass": "book",
+    "firstStep": [
+     "record_yes",
+     "book"
+    ],
+    "mustReach": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slotStarts": [
+     "2026-10-12T14:45:00.000Z"
+    ],
+    "tellBobMustMatch": "card|approv|queued",
+    "v4": {
+     "expectedStart": "2026-10-12T14:45:00.000Z"
+    },
+    "rulesInPlay": [
+     "V1",
+     "V2",
+     "V4",
+     "V5",
+     "V9"
+    ],
+    "basis": "Plan 20 (2026-10-06 02:23 to 02:27): the pre-loop reply path booked slot 155 (Mon Oct 12 10:45 Eastern), the instant 9:45 Central names. Expected class from the study brief (phase 2a): convert correctly and record the yes to the slot she offered, class book, V4 in play.",
+    "notes": "FOR BOB: the only central-time captures are from 2026-10-06, before the loop existed (the old reply path handled them); there is no proof-round or loop run of this persona, so the expected behaviour under the loop is the brief's reading, not a recorded run. Two offers fall on that Monday (10:45am and 4:15pm Eastern); only 10:45 matches 9:45 Central. V4 fires on a yes or booking at 9:45 or 11:45 Eastern."
+   }
+  }
+ ]
+}

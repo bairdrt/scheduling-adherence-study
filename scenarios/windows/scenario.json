@@ -1,0 +1,260 @@
+{
+ "schema": 2,
+ "id": "windows",
+ "title": "Two events: the party answers her ask with three windows in words (search inside each, propose inside them), then accepts the first time offered (record, book with the required colleague).",
+ "source": "Winnie's live harness rehearsal, scenario windows, plan 66 in the proof round of design/scheduling-agent.md (2026-10-11 00:00 to 00:26, known-good/2026-10-10T23-52-16) (capture tests/fixtures/harness/runs/windows-accept-second-2026-10-11T00-26-16-971Z-32v1wf.json); names, addresses, subject and calendar titles replaced, times and shapes kept. The scheduling policy is plan 39's (Winnie's config at ca6b6ee); the config of the capture's day was not re-read. The capture has no plan row: the ask shape is reconstructed from Bob's words quoted in her ask (45 minutes, next week or the week after: from Mon Oct 12 for 14 days, a call), and the colleagues from the people read the capture logs (one required, one optional).",
+ "now": "2026-10-11T00:23:10.000Z",
+ "tz": "America/Indianapolis",
+ "world": {
+  "calendar": "calendar.json",
+  "schedulingPolicy": {
+   "workingHours": {
+    "mon": [
+     "09:00-17:00"
+    ],
+    "tue": [
+     "09:00-17:00"
+    ],
+    "wed": [
+     "09:00-17:00"
+    ],
+    "thu": [
+     "09:00-17:00"
+    ],
+    "fri": [
+     "09:00-17:00"
+    ],
+    "sat": [],
+    "sun": []
+   },
+   "bufferMin": 10,
+   "minNoticeMin": 120,
+   "granularityMin": 15,
+   "protectedBlocks": [],
+   "dayLoadWarnAt": 12,
+   "preferredDurationsMin": [
+    15,
+    30,
+    45,
+    60
+   ],
+   "defaultDurationMin": 30,
+   "maxPerDay": 2,
+   "spreadMin": 120,
+   "allDayBlocks": false
+  },
+  "familyRules": "default",
+  "operatorAddresses": [
+   "bob@example.com",
+   "bob.personal@example.net"
+  ],
+  "agentAddresses": [
+   "winnie@agent.example.com"
+  ],
+  "internalDomain": "example.com",
+  "colleagueCalendars": {
+   "rowan.pike@agent.example.com": [],
+   "sasha.lund@agent.example.com": []
+  }
+ },
+ "plan": {
+  "id": 66,
+  "subject": "Kickoff",
+  "counterpart": "harper.quill@contractor.example.com",
+  "parties": [
+   "harper.quill@contractor.example.com"
+  ],
+  "partyNames": {
+   "harper.quill@contractor.example.com": "Harper Quill"
+  },
+  "askShape": {
+   "mode": "video",
+   "durationMin": 45,
+   "readFrom": [
+    "45 minutes",
+    "next week or the week after"
+   ],
+   "from": "2026-10-12",
+   "days": 14
+  },
+  "holds": [],
+  "colleagues": [
+   {
+    "email": "rowan.pike@agent.example.com",
+    "required": true
+   },
+   {
+    "email": "sasha.lund@agent.example.com",
+    "required": false
+   }
+  ]
+ },
+ "initial": {
+  "thread": [
+   {
+    "from": "Bob <bob@example.com>",
+    "at": "2026-10-11T00:21:09.780Z",
+    "text": "Hi,\n\n+Winnie (agent) to help us schedule. Could you find 45 minutes for the three of us next week or the week after? rowan.pike@agent.example.com is required and sasha.lund@agent.example.com is optional. Reply here in normal language and she will sort it out.\n\nBob"
+   },
+   {
+    "from": "Winnie <winnie@agent.example.com>",
+    "at": "2026-10-11T00:22:43.000Z",
+    "text": "Hello,\n\nI'm Winnie, Bob's virtual assistant. Bob and a colleague would like to find 45 minutes with you. Rather than guess across several calendars, could you send three to five windows over the next two weeks that work on your side? I will fit our side to them and come back with a time.\n\nWinnie\nVirtual scheduling assistant to Bob, Example Co"
+   }
+  ],
+  "bob": [],
+  "links": {},
+  "sent": [
+   {
+    "what": "ask",
+    "at": "2026-10-11T00:21:36.801Z",
+    "to": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slots": [],
+    "status": "sent",
+    "summary": "Asked for three to five windows over the next two weeks. (The capture row carries no rationale; this line stands in.)",
+    "wentOut": true,
+    "wentOutAt": "2026-10-11T00:21:42.964Z"
+   }
+  ],
+  "offered": []
+ },
+ "events": [
+  {
+   "index": 0,
+   "kind": "reply",
+   "now": "2026-10-11T00:23:10.000Z",
+   "trigger": "Harper Quill replied on the thread.",
+   "add": {
+    "thread": [
+     {
+      "from": "Harper Quill <harper.quill@contractor.example.com>",
+      "at": "2026-10-11T00:22:58.123Z",
+      "text": "Happy to. Friday, Oct 16 afternoon works for me, so does Tuesday, Oct 20 between 1 and 3, and I could do Wednesday, Oct 21 morning."
+     }
+    ]
+   },
+   "capture": {
+    "sent": [
+     {
+      "what": "booking",
+      "at": "2026-10-11T00:23:38.141Z",
+      "to": [
+       "harper.quill@contractor.example.com"
+      ],
+      "slots": [
+       289
+      ],
+      "status": "sent",
+      "summary": "Booked Fri, Oct 16, 4:15pm inside her Friday-afternoon window; the card quoted her words. (The expected path under Bob's 2026-11-07 ruling; no capture of it exists.)",
+      "wentOut": true,
+      "wentOutAt": "2026-10-11T00:23:42.601Z"
+     }
+    ],
+    "offered": [
+     {
+      "id": 289,
+      "start": "2026-10-16T20:15:00.000Z",
+      "end": "2026-10-16T21:00:00.000Z"
+     }
+    ],
+    "acceptances": [
+     {
+      "party": "harper.quill@contractor.example.com",
+      "slot": 289,
+      "at": "2026-10-11T00:23:38.141Z"
+     }
+    ],
+    "closed": "booked [slot 289] (event 1)"
+   },
+   "facts": [
+    {
+     "tool": "check_calendar",
+     "args": {
+      "windows": [
+       {
+        "from": "2026-10-16",
+        "days": 1,
+        "earliest": "12:00",
+        "latest": "17:00"
+       },
+       {
+        "from": "2026-10-20",
+        "days": 1,
+        "earliest": "13:00",
+        "latest": "15:00"
+       },
+       {
+        "from": "2026-10-21",
+        "days": 1,
+        "earliest": "09:00",
+        "latest": "12:00"
+       }
+      ],
+      "durationMin": 45
+     }
+    }
+   ],
+   "expect": {
+    "decisionClass": "book",
+    "mustReach": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slotWithin": [
+     {
+      "start": "2026-10-16T16:00:00.000Z",
+      "end": "2026-10-16T21:00:00.000Z"
+     },
+     {
+      "start": "2026-10-20T17:00:00.000Z",
+      "end": "2026-10-20T19:00:00.000Z"
+     },
+     {
+      "start": "2026-10-21T13:00:00.000Z",
+      "end": "2026-10-21T16:00:00.000Z"
+     }
+    ],
+    "tellBobMustMatch": "card|approv|queued",
+    "rulesInPlay": [
+     "V1",
+     "V2",
+     "V3",
+     "V5",
+     "V9"
+    ],
+    "basis": "Bob's ruling in the harness walkthrough, 2026-11-07 (\"book, any window with hours\"), applying Winnie's unit D of design/agent-authorship-2026-11-06.md (plan 104: \"she doesn't need to check again\"): a window the party wrote with its day and hours is their conditional yes; check_calendar verifies it with their own words and book takes a free slot inside it. Until 11-07 the expectation was propose (plan 66's proof-round capture, under the rule that a windows slot is only a time to propose).",
+    "notes": "The three windows are the same spans as before (slotWithin). The booking card quotes her words, which is what replaces the confirmation round trip. FOR BOB (unchanged): the colleagues' calendars are not in any capture; both are modelled as readable and empty."
+   }
+  },
+  {
+   "index": 1,
+   "kind": "reply",
+   "now": "2026-10-11T00:25:10.000Z",
+   "trigger": "Harper Quill replied on the thread.",
+   "add": {
+    "thread": [
+     {
+      "from": "Harper Quill <harper.quill@contractor.example.com>",
+      "at": "2026-10-11T00:24:59.079Z",
+      "text": "Got the invite, thanks. Friday at 4:15 pm is on my calendar; see you then."
+     }
+    ]
+   },
+   "expect": {
+    "decisionClass": "wait",
+    "alsoAccept": [
+     "ask_bob"
+    ],
+    "rulesInPlay": [
+     "V1",
+     "V5",
+     "V8",
+     "V9"
+    ],
+    "basis": "The second script (Bob, 2026-11-07, harness walkthrough): with event 0 a booking, her next message answers the invite, not a proposal. Nothing is owed outward: the plan is closed by the booking, so the run waits, or tells Bob she confirmed (ask_bob is the class a tell_bob alone lands in).",
+    "notes": "Replaced the accept-first persona reply (\"Friday at 4:15 pm works for me\", a yes to a proposal), which no longer fits a booked plan. V8 is the rule in play: a record_yes or a second booking after the close is the miss. In a sequence run where event 0 ended in a proposal instead, this reply still reads as her confirmation of that Friday and the right move is to book it; the grade is read in that light (design 13)."
+   }
+  }
+ ]
+}

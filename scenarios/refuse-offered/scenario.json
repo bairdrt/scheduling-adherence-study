@@ -1,0 +1,175 @@
+{
+ "schema": 2,
+ "id": "refuse-offered",
+ "title": "One party refuses the first offered time and asks for something later in the week. Nothing booked; offer what still stands or later times, holds kept.",
+ "source": "Winnie's live harness rehearsal, persona refuse-offered, plan 27 (capture tests/fixtures/harness/runs/standard-refuse-offered-2026-10-06T10-48-06-207Z-st4p9w.json); names, addresses, subject and calendar titles replaced (design section 6), times and shapes kept exactly. The scheduling policy is plan 39's (Winnie's config at ca6b6ee); the config of the capture's day was not re-read. Calendar from the snapshot of 2026-10-06 06:15Z (c7decd2), the nearest to now; that snapshot's sync reaches 2026-10-20 03:17Z, about seven night hours short of this scenario's synthesized horizon.",
+ "now": "2026-10-06T10:44:50.000Z",
+ "tz": "America/Indianapolis",
+ "world": {
+  "calendar": "calendar.json",
+  "schedulingPolicy": {
+   "workingHours": {
+    "mon": [
+     "09:00-17:00"
+    ],
+    "tue": [
+     "09:00-17:00"
+    ],
+    "wed": [
+     "09:00-17:00"
+    ],
+    "thu": [
+     "09:00-17:00"
+    ],
+    "fri": [
+     "09:00-17:00"
+    ],
+    "sat": [],
+    "sun": []
+   },
+   "bufferMin": 10,
+   "minNoticeMin": 120,
+   "granularityMin": 15,
+   "protectedBlocks": [],
+   "dayLoadWarnAt": 12,
+   "preferredDurationsMin": [
+    15,
+    30,
+    45,
+    60
+   ],
+   "defaultDurationMin": 30,
+   "maxPerDay": 2,
+   "spreadMin": 120,
+   "allDayBlocks": false
+  },
+  "familyRules": "default",
+  "operatorAddresses": [
+   "bob@example.com",
+   "bob.personal@example.net"
+  ],
+  "agentAddresses": [
+   "winnie@agent.example.com"
+  ],
+  "internalDomain": "example.com"
+ },
+ "plan": {
+  "id": 27,
+  "subject": "Intro call",
+  "counterpart": "harper.quill@contractor.example.com",
+  "parties": [
+   "harper.quill@contractor.example.com"
+  ],
+  "partyNames": {
+   "harper.quill@contractor.example.com": "Harper Quill"
+  },
+  "askShape": {
+   "mode": "video",
+   "durationMin": 30,
+   "readFrom": [
+    "call",
+    "30 minutes",
+    "next week"
+   ],
+   "from": "2026-10-12",
+   "days": 5
+  },
+  "holds": []
+ },
+ "initial": {
+  "thread": [
+   {
+    "from": "Bob <bob@example.com>",
+    "at": "2026-10-06T10:42:35.988Z",
+    "text": "Hi,\n\n+Winnie (agent) to help us schedule this one. Could you find us 30 minutes\nnext week for an intro call? Reply here in normal language as you would with\nan assistant and she will sort out the time.\n\nBob"
+   },
+   {
+    "from": "Winnie <winnie@agent.example.com>",
+    "at": "2026-10-06T10:44:20.000Z",
+    "text": "Hello,\n\nI'm Winnie, Bob's virtual assistant. Bob asked me to set up 30 minutes with you on a Meet link. Here are times that work on his side:\n\n- Mon, Oct 12, 10:45am to 11:15am ET\n- Mon, Oct 12, 4:15pm to 4:45pm ET\n- Tue, Oct 13, 2:15pm to 2:45pm ET\n\nIf one of those suits, say so and I will send the invite. If none do, send me a couple of times that work for you and I will check them.\n\nWinnie\nVirtual scheduling assistant to Bob, Example Co"
+   }
+  ],
+  "bob": [],
+  "links": {},
+  "sent": [
+   {
+    "what": "proposal",
+    "at": "2026-10-06T10:43:13.103Z",
+    "to": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slots": [
+     176,
+     177,
+     178
+    ],
+    "status": "sent",
+    "summary": "Offered three times on a Meet link, Bob in cc. (The ledger row in the capture carries no rationale; this line stands in.)",
+    "wentOut": true,
+    "wentOutAt": "2026-10-06T10:43:17.310Z"
+   }
+  ],
+  "offered": [
+   {
+    "id": 176,
+    "start": "2026-10-12T14:45:00.000Z",
+    "end": "2026-10-12T15:15:00.000Z"
+   },
+   {
+    "id": 177,
+    "start": "2026-10-12T20:15:00.000Z",
+    "end": "2026-10-12T20:45:00.000Z"
+   },
+   {
+    "id": 178,
+    "start": "2026-10-13T18:15:00.000Z",
+    "end": "2026-10-13T18:45:00.000Z"
+   }
+  ]
+ },
+ "events": [
+  {
+   "index": 0,
+   "kind": "reply",
+   "trigger": "Harper Quill replied on the thread.",
+   "add": {
+    "thread": [
+     {
+      "from": "Harper Quill <harper.quill@contractor.example.com>",
+      "at": "2026-10-06T10:44:34.928Z",
+      "text": "Monday at 10:45 am won't work, sorry. Any chance of something later in the week?"
+     }
+    ]
+   },
+   "expect": {
+    "decisionClass": "propose",
+    "alsoAccept": [
+     "ask_party"
+    ],
+    "mustReach": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slotWithin": [
+     {
+      "start": "2026-10-12T15:15:00.000Z",
+      "end": "2026-10-17T04:00:00.000Z"
+     }
+    ],
+    "rulesInPlay": [
+     "V1",
+     "V2",
+     "V3",
+     "V5",
+     "V9"
+    ],
+    "basis": "Plan 27 (2026-10-06 10:42 to 10:48, pre-loop): the reader saw the refusal, booked nothing, kept the holds, carded a note telling the vendor the other offered times still stand (Mon Oct 12 4:15pm, Tue Oct 13 2:15pm) and told Bob \"turned down ... (slot 176) ... Nothing booked\" (winnie tools/harness/expectations.ts EXPECTED_SAY).",
+    "notes": "FOR BOB: there is no loop-era capture of this persona and the brief gives no class for it. My reading under the loop: record_no on slot 176, then propose times after the refused one (the two that still stand, or later ones this week), class propose; an ask to the vendor naming no times (the old standing note's shape is a proposal of the remaining slots, so ask is accepted only as a fallback). Booking anything is wrong (no yes). The slotWithin span runs from the end of the refused slot to the end of the asked week; whether Monday 4:15pm counts as 'later in the week' is my guess. firstStep added after the 2026-11-05 smoke run: A's one action was record_no on slot 176, the loop's own first step here, and the expectation had graded it a miss.",
+    "firstStep": [
+     "record_no",
+     "propose",
+     "ask"
+    ]
+   }
+  }
+ ]
+}

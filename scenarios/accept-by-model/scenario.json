@@ -1,0 +1,172 @@
+{
+ "schema": 2,
+ "id": "accept-by-model",
+ "title": "A yes with no accept phrase and no clock (\"The later Tuesday option is the one for me\"), two offers on that Tuesday. Read it to the 12:30 slot, record, book.",
+ "source": "Winnie's live harness rehearsal, persona accept-by-model, plan 63 (capture tests/fixtures/harness/runs/standard-accept-by-model-2026-10-11T00-13-18-580Z-32foil.json); names, addresses, subject and calendar titles replaced (design section 6), times and shapes kept exactly. The scheduling policy is plan 39's (Winnie's config at ca6b6ee); the config of the capture's day was not re-read.",
+ "now": "2026-10-11T00:11:55.000Z",
+ "tz": "America/Indianapolis",
+ "world": {
+  "calendar": "calendar.json",
+  "schedulingPolicy": {
+   "workingHours": {
+    "mon": [
+     "09:00-17:00"
+    ],
+    "tue": [
+     "09:00-17:00"
+    ],
+    "wed": [
+     "09:00-17:00"
+    ],
+    "thu": [
+     "09:00-17:00"
+    ],
+    "fri": [
+     "09:00-17:00"
+    ],
+    "sat": [],
+    "sun": []
+   },
+   "bufferMin": 10,
+   "minNoticeMin": 120,
+   "granularityMin": 15,
+   "protectedBlocks": [],
+   "dayLoadWarnAt": 12,
+   "preferredDurationsMin": [
+    15,
+    30,
+    45,
+    60
+   ],
+   "defaultDurationMin": 30,
+   "maxPerDay": 2,
+   "spreadMin": 120,
+   "allDayBlocks": false
+  },
+  "familyRules": "default",
+  "operatorAddresses": [
+   "bob@example.com",
+   "bob.personal@example.net"
+  ],
+  "agentAddresses": [
+   "winnie@agent.example.com"
+  ],
+  "internalDomain": "example.com"
+ },
+ "plan": {
+  "id": 63,
+  "subject": "Intro call",
+  "counterpart": "harper.quill@contractor.example.com",
+  "parties": [
+   "harper.quill@contractor.example.com"
+  ],
+  "partyNames": {
+   "harper.quill@contractor.example.com": "Harper Quill"
+  },
+  "askShape": {
+   "mode": "video",
+   "durationMin": 30,
+   "readFrom": [
+    "call",
+    "30 minutes",
+    "your window: next week (the model's reading: from 2026-10-12, 5 days)"
+   ],
+   "set": {
+    "mode": true,
+    "durationMin": true
+   },
+   "from": "2026-10-12",
+   "days": 5
+  },
+  "holds": []
+ },
+ "initial": {
+  "thread": [
+   {
+    "from": "Bob <bob@example.com>",
+    "at": "2026-10-11T00:09:12.552Z",
+    "text": "Hi,\n\n+Winnie (agent) to help us schedule this one. Could you find us 30 minutes\nnext week for an intro call? Reply here in normal language as you would with\nan assistant and she will sort out the time.\n\nBob"
+   },
+   {
+    "from": "Winnie <winnie@agent.example.com>",
+    "at": "2026-10-11T00:11:29.000Z",
+    "text": "Hello,\n\nI'm Winnie, Bob's virtual assistant. Bob asked me to set up 30 minutes with you on a Meet link. Here are times that work on his side:\n\n- Tue, Oct 13, 9:30am to 10:00am ET\n- Tue, Oct 13, 12:30pm to 1:00pm ET\n- Fri, Oct 16, 4:15pm to 4:45pm ET\n\nIf one of those suits, say so and I will send the invite. If none do, send me a couple of times that work for you and I will check them.\n\nWinnie\nVirtual scheduling assistant to Bob, Example Co"
+   }
+  ],
+  "bob": [],
+  "links": {},
+  "sent": [
+   {
+    "what": "proposal",
+    "at": "2026-10-11T00:10:22.774Z",
+    "to": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slots": [
+     286,
+     287,
+     288
+    ],
+    "status": "sent",
+    "summary": "Offered three times on a Meet link, Bob in cc. (The ledger row in the capture carries no rationale; this line stands in.)",
+    "wentOut": true,
+    "wentOutAt": "2026-10-11T00:10:26.867Z"
+   }
+  ],
+  "offered": [
+   {
+    "id": 286,
+    "start": "2026-10-13T13:30:00.000Z",
+    "end": "2026-10-13T14:00:00.000Z"
+   },
+   {
+    "id": 287,
+    "start": "2026-10-13T16:30:00.000Z",
+    "end": "2026-10-13T17:00:00.000Z"
+   },
+   {
+    "id": 288,
+    "start": "2026-10-16T20:15:00.000Z",
+    "end": "2026-10-16T20:45:00.000Z"
+   }
+  ]
+ },
+ "events": [
+  {
+   "index": 0,
+   "kind": "reply",
+   "trigger": "Harper Quill replied on the thread.",
+   "add": {
+    "thread": [
+     {
+      "from": "Harper Quill <harper.quill@contractor.example.com>",
+      "at": "2026-10-11T00:11:43.595Z",
+      "text": "The later Tuesday option is the one for me."
+     }
+    ]
+   },
+   "expect": {
+    "decisionClass": "book",
+    "firstStep": [
+     "record_yes",
+     "book"
+    ],
+    "mustReach": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slotStarts": [
+     "2026-10-13T16:30:00.000Z"
+    ],
+    "tellBobMustMatch": "card|approv|queued",
+    "rulesInPlay": [
+     "V1",
+     "V2",
+     "V5",
+     "V9"
+    ],
+    "basis": "Plan 63 in the proof round of design/scheduling-agent.md (2026-10-11 00:00 to 00:26, known-good/2026-10-10T23-52-16): three steps, \"later Tuesday\" resolved to the later Tuesday offer (slot 287, Tue Oct 13 12:30), yes recorded, booked behind a card, Bob told.",
+    "notes": "firstStep allows book as A's one action because the yes is in the party's own words; a book without a recorded yes will still fire V2 in A (everyoneCovers sees no yes), which is the guard's view, not necessarily an error of reading."
+   }
+  }
+ ]
+}

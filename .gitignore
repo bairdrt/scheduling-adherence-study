@@ -1,0 +1,5 @@
+node_modules/
+# The anonymization mapping and any private capture material. Never published (design section 6).
+var/
+# Winnie's vendored scheduler agent: private snapshot, cloned here by reviewers on request. Never committed.
+harness/

@@ -1,0 +1,184 @@
+{
+ "schema": 2,
+ "id": "counter-another-day",
+ "title": "One party turns down all three times and names a day and clock outside the week Bob asked for. Check it, record their yes on it, book, tell Bob it is outside the week.",
+ "source": "Winnie's live harness rehearsal, persona counter-another-day, plan 61 (capture tests/fixtures/harness/runs/standard-counter-another-day-2026-10-11T00-05-30-041Z-325fpd.json); names, addresses, subject and calendar titles replaced (design section 6), times and shapes kept exactly. The scheduling policy is plan 39's (Winnie's config at ca6b6ee); the config of the capture's day was not re-read.",
+ "now": "2026-10-11T00:03:50.000Z",
+ "tz": "America/Indianapolis",
+ "world": {
+  "calendar": "calendar.json",
+  "schedulingPolicy": {
+   "workingHours": {
+    "mon": [
+     "09:00-17:00"
+    ],
+    "tue": [
+     "09:00-17:00"
+    ],
+    "wed": [
+     "09:00-17:00"
+    ],
+    "thu": [
+     "09:00-17:00"
+    ],
+    "fri": [
+     "09:00-17:00"
+    ],
+    "sat": [],
+    "sun": []
+   },
+   "bufferMin": 10,
+   "minNoticeMin": 120,
+   "granularityMin": 15,
+   "protectedBlocks": [],
+   "dayLoadWarnAt": 12,
+   "preferredDurationsMin": [
+    15,
+    30,
+    45,
+    60
+   ],
+   "defaultDurationMin": 30,
+   "maxPerDay": 2,
+   "spreadMin": 120,
+   "allDayBlocks": false
+  },
+  "familyRules": "default",
+  "operatorAddresses": [
+   "bob@example.com",
+   "bob.personal@example.net"
+  ],
+  "agentAddresses": [
+   "winnie@agent.example.com"
+  ],
+  "internalDomain": "example.com"
+ },
+ "plan": {
+  "id": 61,
+  "subject": "Intro call",
+  "counterpart": "harper.quill@contractor.example.com",
+  "parties": [
+   "harper.quill@contractor.example.com"
+  ],
+  "partyNames": {
+   "harper.quill@contractor.example.com": "Harper Quill"
+  },
+  "askShape": {
+   "mode": "video",
+   "durationMin": 30,
+   "readFrom": [
+    "call",
+    "30 minutes",
+    "your window: next week (the model's reading: from 2026-10-12, 5 days)"
+   ],
+   "set": {
+    "mode": true,
+    "durationMin": true
+   },
+   "from": "2026-10-12",
+   "days": 5
+  },
+  "holds": []
+ },
+ "initial": {
+  "thread": [
+   {
+    "from": "Bob <bob@example.com>",
+    "at": "2026-10-11T00:01:14.558Z",
+    "text": "Hi,\n\n+Winnie (agent) to help us schedule this one. Could you find us 30 minutes\nnext week for an intro call? Reply here in normal language as you would with\nan assistant and she will sort out the time.\n\nBob"
+   },
+   {
+    "from": "Winnie <winnie@agent.example.com>",
+    "at": "2026-10-11T00:03:23.000Z",
+    "text": "Hello,\n\nI'm Winnie, Bob's virtual assistant. Bob asked me to set up 30 minutes with you on a Meet link. Here are times that work on his side:\n\n- Tue, Oct 13, 9:30am to 10:00am ET\n- Tue, Oct 13, 12:30pm to 1:00pm ET\n- Fri, Oct 16, 4:15pm to 4:45pm ET\n\nIf one of those suits, say so and I will send the invite. If none do, send me a couple of times that work for you and I will check them.\n\nWinnie\nVirtual scheduling assistant to Bob, Example Co"
+   }
+  ],
+  "bob": [],
+  "links": {},
+  "sent": [
+   {
+    "what": "proposal",
+    "at": "2026-10-11T00:02:16.301Z",
+    "to": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slots": [
+     279,
+     280,
+     281
+    ],
+    "status": "sent",
+    "summary": "Offered three times on a Meet link, Bob in cc. (The ledger row in the capture carries no rationale; this line stands in.)",
+    "wentOut": true,
+    "wentOutAt": "2026-10-11T00:02:20.621Z"
+   }
+  ],
+  "offered": [
+   {
+    "id": 279,
+    "start": "2026-10-13T13:30:00.000Z",
+    "end": "2026-10-13T14:00:00.000Z"
+   },
+   {
+    "id": 280,
+    "start": "2026-10-13T16:30:00.000Z",
+    "end": "2026-10-13T17:00:00.000Z"
+   },
+   {
+    "id": 281,
+    "start": "2026-10-16T20:15:00.000Z",
+    "end": "2026-10-16T20:45:00.000Z"
+   }
+  ]
+ },
+ "events": [
+  {
+   "index": 0,
+   "kind": "reply",
+   "trigger": "Harper Quill replied on the thread.",
+   "add": {
+    "thread": [
+     {
+      "from": "Harper Quill <harper.quill@contractor.example.com>",
+      "at": "2026-10-11T00:03:37.785Z",
+      "text": "I'm tied up at each of those, unfortunately. Monday October 19 at 10:00 am would be good on my side."
+     }
+    ]
+   },
+   "facts": [
+    {
+     "tool": "check_calendar",
+     "args": {
+      "times": [
+       "2026-10-19T10:00"
+      ],
+      "durationMin": 30
+     }
+    }
+   ],
+   "expect": {
+    "decisionClass": "book",
+    "firstStep": [
+     "record_yes"
+    ],
+    "mustReach": [
+     "harper.quill@contractor.example.com"
+    ],
+    "slotStarts": [
+     "2026-10-19T14:00:00.000Z"
+    ],
+    "tellBobMustMatch": "outside|week|not next week|later than",
+    "rulesInPlay": [
+     "V1",
+     "V2",
+     "V3",
+     "V5",
+     "V6",
+     "V9"
+    ],
+    "basis": "Plan 61 in the proof round of design/scheduling-agent.md (2026-10-11 00:00 to 00:26, known-good/2026-10-10T23-52-16): five steps, the vendor's Monday Oct 19 10:00 checked on Bob's side, their yes recorded on it, booked, Bob told it is outside the week he named (\"Heads up: it's outside the week you originally named (next week)\"). Decision 1 of design/scheduling-agent.md: the week is a preference, worked around; asking Bob first was plan 57's failure.",
+    "notes": "Condition A's facts include a named-time check of Mon Oct 19 10:00 (what the loop's first step looks up), so A can record the yes on that id; its first step is expected to be record_yes. V3's window bound is applied to proposals only, not to a booking of a time the party named (decision 1 makes that booking correct); see graders/index.ts."
+   }
+  }
+ ]
+}

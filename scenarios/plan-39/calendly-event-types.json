@@ -1,0 +1,44 @@
+[
+ {
+  "color": "#ff4f00",
+  "description": "",
+  "name": "Zoom (15 minutes)",
+  "slug": "15",
+  "uuid": "EVENTTYPE01"
+ },
+ {
+  "color": "#ff4f00",
+  "description": "",
+  "name": "Zoom (30 minutes)",
+  "slug": "30",
+  "uuid": "EVENTTYPE02"
+ },
+ {
+  "color": "#ff4f00",
+  "description": "",
+  "name": "Zoom (45 minutes)",
+  "slug": "45",
+  "uuid": "EVENTTYPE03"
+ },
+ {
+  "color": "#ff4f00",
+  "description": "",
+  "name": "Zoom (60 minutes)",
+  "slug": "60",
+  "uuid": "EVENTTYPE04"
+ },
+ {
+  "color": "#ff4f00",
+  "description": null,
+  "name": "In-Person Meeting (60 minutes)",
+  "slug": "60inperson",
+  "uuid": "EVENTTYPE05"
+ },
+ {
+  "color": "#ff4f00",
+  "description": null,
+  "name": "In-Person Meeting (90 minutes)",
+  "slug": "90inperson",
+  "uuid": "EVENTTYPE06"
+ }
+]
