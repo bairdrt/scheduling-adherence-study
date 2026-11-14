@@ -37,6 +37,15 @@ Read this first. Then `docs/study-design.md`.
   is a JSON field name; one is Winnie's self-test marker word; the rest
   were in the harness, which is out. Rescan without the harness: no email,
   nothing unexplained.
+- Bob: "can you make this public?" Done 2026-11-14 night. The repo is
+  public. GitHub Actions on the bairdrt account is locked for billing
+  ("your account is locked due to a billing issue"), so the Pages workflow
+  could not run; Pages now deploys from the main branch's `docs/` folder
+  instead (no workflow), the page is at
+  https://bairdrt.github.io/scheduling-adherence-study/site/ and
+  `docs/index.html` redirects the root there. The workflow file is removed.
+  The billing lock is Bob's to clear in GitHub settings; nothing in the
+  study depends on Actions.
 - Pushed 2026-11-14 night: bairdrt/scheduling-adherence-study main is
   the exported tree (1,566 files; no harness/, no var/; scanned after
   export: no address, nothing unexplained). The Pages workflow is not in
