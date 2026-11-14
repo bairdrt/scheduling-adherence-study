@@ -19,11 +19,14 @@ mkdir -p "$DST"
 # the public tree ignores a privately cloned harness so it never gets committed from there
 grep -q '^harness/$' "$DST/.gitignore" || printf '# Winnie'"'"'s vendored scheduler agent: private snapshot, cloned here by reviewers on request. Never committed.\nharness/\n' >> "$DST/.gitignore"
 
+# GitHub refuses workflow files from a token without the workflow scope (gh auth refresh -h github.com -s workflow)
+if ! gh auth status 2>&1 | grep -q "'workflow'"; then rm -rf "$DST/.github"; echo "note: the gh token lacks the workflow scope; .github/ left out of this publish"; fi
+
 cd "$DST"
 [ -d .git ] || { git init -q -b main; git remote add origin "$REMOTE"; }
 git add -A
 if git diff --cached --quiet; then echo "nothing changed since the last publish"; exit 0; fi
-git -c user.email=baird.rt@gmail.com -c user.name="Bob Baird" commit -q -m "Study as of $DAY
+git -c "user.email=$(git -C "$SRC" config user.email)" -c "user.name=$(git -C "$SRC" config user.name)" commit -q -m "Study as of $DAY
 
 Exported from the private working repository by tools/publish-public.sh. The harness under test (harness/) is held
 privately and is available to reviewers on request; without it the bench and graders do not run.
