@@ -37,8 +37,18 @@ Read this first. Then `docs/study-design.md`.
   is a JSON field name; one is Winnie's self-test marker word; the rest
   were in the harness, which is out. Rescan without the harness: no email,
   nothing unexplained.
-- Pages needs the public repo to be public (free plan), then the workflow
-  runs on its own. Clone is about 900MB; the README gives the blobless line.
+- Pushed 2026-11-14 night: bairdrt/scheduling-adherence-study main is
+  the exported tree (1,566 files; no harness/, no var/; scanned after
+  export: no address, nothing unexplained). The Pages workflow is not in
+  it yet: the gh token lacks the `workflow` scope, so the publish script
+  leaves `.github/` out until Bob runs
+  `gh auth refresh -h github.com -s workflow`, after which one more
+  `tools/publish-public.sh` adds it. Pages then needs the repo public
+  (free plan) and the workflow runs on its own. Clone is about 900MB; the
+  README gives the blobless line.
+- Next, Bob's calls: the h03 held-out read; the workflow scope; flipping
+  the repo public; the job id in design section 1; then the LinkedIn
+  distillation (phase 5).
 - Still waiting on Bob: his read of the h03 held-out finding (record_yes
   on a withdrawn slot), which the write-up reports and does not file. Then
   the LinkedIn distillation (phase 5).
